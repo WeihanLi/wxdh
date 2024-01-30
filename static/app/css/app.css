@@ -1417,7 +1417,7 @@ fieldset[disabled] .radio-custom label {
 }
 
 .phone-content {
-    transform: scale(.33333333);
+    transform: scale(.3);
     transform-origin: 0 0;
     border: 1px #f1f1f1 solid
 }

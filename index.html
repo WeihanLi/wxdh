@@ -26,7 +26,7 @@
 		<div class="container-fluid page-content">
 			<div id="pageHeader">微信对话生成器</div>
 			<div class="edit-content">
-				<div class="tab">
+				<div class="tab" style="max-width: fit-content;">
 					<ul class="nav nav-tabs">
 						<li class="active"><a data-tab href="#tabContent1">外观设置</a></li>
 						<li><a data-tab href="#tabContent2">对话设置</a></li>
@@ -251,6 +251,7 @@
 				</div>
 				<!-- phone -->
 				<div class="phone-wrap">
+					<div style="padding: 0.2em"><button type="button" @click="save()">导出图片</button></div>
 					<div class="phone-content">
 						<div id="phone" class="phone">
 							<div class="phone-top">
