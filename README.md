@@ -18,8 +18,16 @@ fork本项目，然后进入 github.io 自行创建 page 项目，也就是 gith
 
 ### Docker
 
+部署
+
 ```sh
 docker run -d --name wxdh -p 9001:80 --restart=always weihanli/wxdh
+```
+
+删除
+
+```sh
+docker stop wxdh && docker rm wxdh && docker rmi weihanli/wxdh
 ```
 
 ## 特别声明  
