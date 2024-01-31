@@ -314,13 +314,16 @@
 											</div>
 
 											<template v-if="dialog.type == 'text'">
-												<div class="wechat-dialog-text">{{dialog.content}}</div>
+												<div class="wechat-dialog-text">{{dialog.content}}
+													<div class="text-triangle"></div>
+												</div>
 											</template>
 
 											<template v-if="dialog.type == 'image'">
 												<div
 													:class="['wechat-dialog-text', 'wechat-dialog-image', {'wechat-dialog-image-noborder':setting.background != ''}]">
 													<img :src="dialog.image">
+													<div class="text-triangle"></div>
 												</div>
 											</template>
 
@@ -334,6 +337,7 @@
 													<div v-if="!dialog.is_me"
 														:style="{width: getVoiceLength(dialog.time) + 'px'}"></div>
 													<em v-if="!dialog.is_me && dialog.isread == '0'"></em>
+													<div class="text-triangle"></div>
 												</div>
 											</template>
 
@@ -367,6 +371,7 @@
 														<span v-if="dialog.type == 'transfer'">微信转账</span>
 														<span v-if="dialog.type == 'redpacket'">微信红包</span>
 													</div>
+													<div class="text-triangle"></div>
 												</div>
 											</template>
 
@@ -396,6 +401,7 @@
 										</div>
 										<div class="wechat-dialog-text wechat-dialog-voice">
 											<span>1"</span><i></i>
+											<div class="text-triangle"></div>
 										</div>
 										<a class="a-wechat-dialog-del" href="javascript:;" title="删除对话">X</a>
 									</div>
@@ -405,6 +411,7 @@
 										</div>
 										<div class="wechat-dialog-text wechat-dialog-voice">
 											<i></i><span>1"</span><em></em>
+											<div class="text-triangle"></div>
 										</div>
 										<a class="a-wechat-dialog-del" href="javascript:;" title="删除对话">X</a>
 									</div>
@@ -413,7 +420,7 @@
 											<img src="static/app/images/user-face.png" />
 										</div>
 										<div class="wechat-dialog-text wechat-dialog-image"><img
-												src="static/app/images/dialog-demo1.jpeg"></div>
+												src="static/app/images/dialog-demo1.jpeg"><div class="text-triangle"></div></div>
 										<a class="a-wechat-dialog-del" href="javascript:;" title="删除对话">X</a>
 									</div>
 									<div class="wechat-dialog wechat-dialog-right el-remove">
@@ -421,7 +428,7 @@
 											<img src="static/app/images/user-face.png" />
 										</div>
 										<div class="wechat-dialog-text">
-											hellohelhellohellohellohellohellohellolohello</div>
+											hellohelhellohellohellohellohellohellolohello<div class="text-triangle"></div></div>
 										<a class="a-wechat-dialog-del" href="javascript:;" title="删除对话">X</a>
 									</div>
 									<div class="wechat-dialog el-remove">
@@ -439,6 +446,7 @@
 											<div class="wechat-dialog-trans-bottom">
 												<span>微信转账</span>
 											</div>
+											<div class="text-triangle"></div>
 										</div>
 										<a class="a-wechat-dialog-del" href="javascript:;" title="删除对话">X</a>
 										<div class="a-wechat-dialog-menu">
@@ -460,6 +468,7 @@
 											<div class="wechat-dialog-trans-bottom">
 												<span>微信转账</span>
 											</div>
+											<div class="text-triangle"></div>
 										</div>
 										<a class="a-wechat-dialog-del" href="javascript:;" title="删除对话">X</a>
 									</div>
@@ -478,6 +487,7 @@
 											<div class="wechat-dialog-trans-bottom">
 												<span>微信转账</span>
 											</div>
+											<div class="text-triangle"></div>
 										</div>
 										<a class="a-wechat-dialog-del" href="javascript:;" title="删除对话">X</a>
 									</div>
@@ -496,6 +506,7 @@
 											<div class="wechat-dialog-trans-bottom">
 												<span>微信转账</span>
 											</div>
+											<div class="text-triangle"></div>
 										</div>
 										<a class="a-wechat-dialog-del" href="javascript:;" title="删除对话">X</a>
 									</div>
@@ -514,6 +525,7 @@
 											<div class="wechat-dialog-trans-bottom">
 												<span>微信红包</span>
 											</div>
+											<div class="text-triangle"></div>
 										</div>
 										<a class="a-wechat-dialog-del" href="javascript:;" title="删除对话">X</a>
 									</div>
@@ -531,6 +543,7 @@
 											<div class="wechat-dialog-trans-bottom">
 												<span>微信红包</span>
 											</div>
+											<div class="text-triangle"></div>
 										</div>
 										<a class="a-wechat-dialog-del" href="javascript:;" title="删除对话">X</a>
 									</div>
