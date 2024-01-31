@@ -1799,8 +1799,18 @@ fieldset[disabled] .radio-custom label {
     margin-right: 160px
 }
 
-.wechat-dialog-text:after {
+/* .wechat-dialog-text:after {
     content: '';
+    background: #fff;
+    width: 24px;
+    height: 24px;
+    border-bottom-left-radius: 4px;
+    top: 50px;
+    left: -12px;
+    position: absolute;
+    transform: rotate(45deg)
+} */
+.text-triangle {
     background: #fff;
     width: 24px;
     height: 24px;
@@ -1811,7 +1821,14 @@ fieldset[disabled] .radio-custom label {
     transform: rotate(45deg)
 }
 
-.wechat-dialog-right .wechat-dialog-text:after {
+/* .wechat-dialog-right .wechat-dialog-text:after {
+    background: #98e970;
+    left: auto;
+    right: -10px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0
+} */
+.wechat-dialog-right .text-triangle {
     background: #98e970;
     left: auto;
     right: -10px;
@@ -1930,9 +1947,15 @@ fieldset[disabled] .radio-custom label {
 .wechat-dialog .wechat-dialog-trans:after {
     background: #f79c46
 }
+.wechat-dialog .wechat-dialog-trans .text-triangle {
+    background: #f79c46
+}
 
 .wechat-dialog .wechat-dialog-trans-get,
 .wechat-dialog .wechat-dialog-trans-get:after {
+    background: #f8e2c6
+}
+.wechat-dialog .wechat-dialog-trans-get .text-triangle {
     background: #f8e2c6
 }
 
@@ -1951,8 +1974,19 @@ fieldset[disabled] .radio-custom label {
     height: 1px;
     bottom: 0
 }
+.wechat-dialog .wechat-dialog-trans-content .text-triangle {
+    content: '';
+    background: #f0b36f;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0
+}
 
 .wechat-dialog .wechat-dialog-trans-get .wechat-dialog-trans-content:after {
+    background: #f9e7d1
+}
+.wechat-dialog .wechat-dialog-trans-get .wechat-dialog-trans-content .text-triangle {
     background: #f9e7d1
 }
 
